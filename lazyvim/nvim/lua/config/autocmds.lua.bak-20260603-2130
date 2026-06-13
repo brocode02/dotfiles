@@ -1,0 +1,33 @@
+-- Autocmds are automatically loaded on the VeryLazy event
+-- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
+--
+-- Add any additional autocmds here
+-- with `vim.api.nvim_create_autocmd`
+--
+-- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
+-- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+-- Save theme to file when changed (for persistence across restarts)
+vim.api.nvim_create_autocmd("ColorSchemE", {
+  callback = function(args)
+    local f = io.open(vim.fn.stdpath("data") .. "/nvim_theme", "w")
+    if f then
+      f:write(args.match)
+      f:close()
+    end
+  end,
+})
+
+-- Hide inline error text while typing, show only underlines
+vim.api.nvim_create_autocmd("InsertEnter", {
+  callback = function()
+    vim.diagnostic.config({ virtual_text = false })
+  end,
+})
+vim.api.nvim_create_autocmd("InsertLeave", {
+  callback = function()
+    vim.diagnostic.config({
+      virtual_text = { prefix = "●", spacing = 2 },
+    })
+  end,
+})
