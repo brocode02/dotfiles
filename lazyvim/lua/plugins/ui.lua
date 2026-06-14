@@ -8,6 +8,14 @@ return {
   {
     "xiyaowong/transparent.nvim",
     lazy = false,
+    opts = {
+      extra_groups = {
+        "NormalFloat",
+        "FloatBorder",
+        "TelescopeNormal",
+        "TelescopeBorder",
+      },
+    },
   },
   {
     "nvim-telescope/telescope.nvim",
