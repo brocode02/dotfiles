@@ -11,9 +11,6 @@ hl.config({
 			vibrancy = 0.35,
 		},
 	},
-	render = {
-		explicit_sync = 2,
-	},
 })
 
 -- hl.gesture({
