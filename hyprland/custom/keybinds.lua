@@ -1,5 +1,6 @@
 hl.unbind("SUPER + C")
 hl.unbind("SUPER + X")
+hl.unbind("SUPER + B")
 hl.bind("SUPER + C", hl.dsp.exec_cmd("/usr/bin/brave"), { description = "App: Brave" })
 hl.bind("SUPER + X", hl.dsp.exec_cmd("kitty -1 nvim"), { description = "App: LazyVim" })
 
