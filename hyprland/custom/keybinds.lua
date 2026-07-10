@@ -1,10 +1,9 @@
 hl.unbind("SUPER + C")
 hl.unbind("SUPER + X")
 hl.unbind("SUPER + B")
-hl.unbind("SUPER + E")
 hl.bind("SUPER + B", hl.dsp.exec_cmd("/usr/bin/brave"), { description = "App: Brave" })
 hl.bind("SUPER + X", hl.dsp.exec_cmd("kitty -1 nvim"), { description = "App: LazyVim" })
-hl.bind("SUPER + E"),hl.dsp.exec_cmd("kitty -1 fish -c y")
+hl.bind("SUPER + Y", hl.dsp.exec_cmd("kitty -1 fish -c y"), { description = "App: Yazi" })
 
 hl.bind("ALT + F4", hl.dsp.window.close(), { non_consuming = true })
 
