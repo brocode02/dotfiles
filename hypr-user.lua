@@ -24,7 +24,17 @@ hl.bind("SUPER + TAB", hl.dsp.exec_cmd("qs ipc -c overview call overview toggle"
 ---------------------------------------------------
 ---------------------------------------------------
 hl.unbind("SUPER + P")
-hl.bind("SUPER + P", hl.dsp.exec_cmd("/home/aman/.config/hypr/.secret.sh"))
+hl.bind("SUPER + P", hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"), { description = "Secret: unlock workspace" })
+hl.window_rule({ match = { class = "firefox" }, tag = "-secret_app" })
+local function guard_secret_apps(win)
+	if win.class == "brave-browser" then
+		local ws = win.workspace
+		if not ws or ws.name ~= "special:secret" then
+			hl.dispatch(hl.dsp.window.close({ window = win }))
+		end
+	end
+end
+hl.on("window.open", guard_secret_apps)
 local function destroy_secret()
 	local ws = hl.get_workspace("special:secret")
 	if not ws or ws.windows == 0 then
