@@ -1,8 +1,9 @@
 return {
-	--terminal = "kitty -1",
+	terminal = "kitty",
 	kbTerminal = "SUPER + Return",
 	kbCommunicationWs = "SUPER + C",
 	kbPinWindow = "SUPER + SHIFT + P",
-	--editor = "nvim",
+	kbEditor = "SUPER + SHIFT + ALT + C",
+	kbSystemMonitorWs = "SUPER + B", --editor = "nvim",
 	--kbEditor = "SUPER + X",
 }

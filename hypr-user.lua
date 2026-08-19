@@ -4,10 +4,10 @@ hl.bind("SUPER + J", hl.dsp.exec_cmd("caelestia shell drawers toggle bar"), { de
 hl.unbind("SUPER + Z")
 hl.bind("SUPER + Z", hl.dsp.exec_cmd("/usr/bin/zen-browser"), { description = "open zen broswer" })
 hl.bind("SUPER + Y", hl.dsp.exec_cmd("kitty -1 yazi"), { description = "open yazi file manager" })
-hl.unbind("SUPER + X")
-hl.bind("SUPER + X", hl.dsp.exec_cmd("kitty -1 nvim"), { description = "open lazyvim" })
-hl.unbind("SUPER + B")
-hl.bind("SUPER+B", hl.dsp.exec_cmd("kitty -1 btop"))
+-- hl.unbind("SUPER + X")
+-- hl.bind("SUPER + X", hl.dsp.exec_cmd("kitty -1 nvim"), { description = "open lazyvim" })
+-- hl.unbind("SUPER + B")
+-- hl.bind("SUPER+B", hl.dsp.exec_cmd("kitty -1 btop"))
 hl.unbind("SUPER + D")
 hl.bind(
 	"SUPER + D",
@@ -24,8 +24,12 @@ hl.bind("SUPER + TAB", hl.dsp.exec_cmd("qs ipc -c overview call overview toggle"
 ---------------------------------------------------
 ---------------------------------------------------
 hl.unbind("SUPER + P")
-hl.bind("SUPER + P", hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"), { description = "Secret: unlock workspace" })
-hl.window_rule({ match = { class = "firefox" }, tag = "-secret_app" })
+hl.bind(
+	"SUPER + P",
+	hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"),
+	{ description = "Secret: unlock workspace" }
+)
+-- hl.window_rule({ match = { class = "brave-browser" }, no_blur = true })
 local function guard_secret_apps(win)
 	if win.class == "brave-browser" then
 		local ws = win.workspace
