@@ -1,7 +1,9 @@
 {
     "appearance": {
         "transparency": {
-            "enabled": false
+            "base": 0.85,
+            "enabled": false,
+            "layers": 0.4
         }
     },
     "background": {
@@ -9,6 +11,12 @@
             "enabled": true,
             "position": "top-right",
             "scale": 0.75
+        },
+        "visualiser": {
+            "autoHide": true,
+            "enabled": true,
+            "rounding": 2,
+            "spacing": 1
         },
         "wallpaperEnabled": true
     },

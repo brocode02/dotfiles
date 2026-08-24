@@ -20,3 +20,6 @@ end
 function i
     sudo pacman -S $argv
 end
+function nvchad
+    env NVIM_APPNAME=nvchad nvim $argv
+end
