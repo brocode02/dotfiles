@@ -8,6 +8,6 @@ return {
 	--kbEditor = "SUPER + X",
 	workspaceGaps = 20,
 	windowGapsIn = 2,
-	windowGapsOut = 20,
-	singleWindowGapsOut = 20,
+	windowGapsOut = 5,
+	singleWindowGapsOut = 5,
 }
