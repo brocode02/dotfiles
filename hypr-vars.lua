@@ -7,3 +7,7 @@ return {
 	kbSystemMonitorWs = "SUPER + B", --editor = "nvim",
 	--kbEditor = "SUPER + X",
 }
+	workspaceGaps = 20,
+	windowGapsIn = 5,
+	windowGapsOut = 10,
+	singleWindowGapsOut = 20,
