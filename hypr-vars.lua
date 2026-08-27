@@ -1,5 +1,5 @@
 return {
-	terminal = "kitty",
+	terminal = "foot",
 	kbTerminal = "SUPER + Return",
 	kbCommunicationWs = "SUPER + C",
 	kbPinWindow = "SUPER + SHIFT + P",
