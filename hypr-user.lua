@@ -1,8 +1,8 @@
 ----------------------------------------------------
 ----------------------------------------------------
 hl.bind("SUPER + J", hl.dsp.exec_cmd("caelestia shell drawers toggle bar"), { description = "Shell: Toggle bar" })
-hl.unbind("SUPER + Z")
-hl.bind("SUPER + Z", hl.dsp.exec_cmd("/usr/bin/zen-browser"), { description = "open zen broswer" })
+-- hl.unbind("SUPER + Z")
+-- hl.bind("SUPER + Z", hl.dsp.exec_cmd("/usr/bin/zen-browser"), { description = "open zen broswer" })
 hl.bind("SUPER + Y", hl.dsp.exec_cmd("kitty -1 yazi"), { description = "open yazi file manager" })
 -- hl.unbind("SUPER + X")
 -- hl.bind("SUPER + X", hl.dsp.exec_cmd("kitty -1 nvchad"), { description = "open lazyvim" })
