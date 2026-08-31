@@ -23,3 +23,5 @@ end
 function nvchad
     env NVIM_APPNAME=nvchad nvim $argv
 end
+
+abbr c clear
