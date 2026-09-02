@@ -1,96 +1,96 @@
 {
-    "appearance": {
-        "transparency": {
-            "base": 0.85,
-            "enabled": true,
-            "layers": 0.4
-        }
-    },
-    "background": {
-        "desktopClock": {
-            "enabled": true,
-            "position": "top-right",
-            "scale": 0.75
-        },
-        "visualiser": {
-            "autoHide": true,
-            "blur": false,
-            "enabled": true,
-            "rounding": 2,
-            "spacing": 1
-        },
-        "wallpaperEnabled": true
-    },
-    "bar": {
-        "clock": {
-            "background": false,
-            "showDate": true,
-            "showIcon": true
-        },
-        "persistent": false,
-        "scrollActions": {
-            "brightness": true,
-            "volume": true,
-            "workspaces": true
-        },
-        "showOnHover": true,
-        "workspaces": {
-            "specialWorkspaceIcons": [
-                {
-                    "icon": "lock",
-                    "name": "secret"
-                }
-            ]
-        }
-    },
-    "dashboard": {
-        "enabled": true,
-        "showOnHover": false,
-        "showWeather": true
-    },
-    "general": {
-        "apps": {
-            "terminal": [
-                "foot"
-            ]
-        }
-    },
-    "launcher": {
-        "enableDangerousActions": true,
-        "hiddenApps": [
-            "an-anime-game-launcher",
-            "brave-browser",
-            "firefox"
-        ],
-        "showOnHover": false,
-        "useFuzzy": {
-            "actions": true,
-            "apps": true,
-            "schemes": true,
-            "variants": true,
-            "wallpapers": true
-        },
-        "vimKeybinds": true
-    },
-    "lock": {
-        "hideNotifs": true
-    },
-    "services": {
-        "maxVolume": 1,
-        "useFahrenheit": false,
-        "useTwelveHourClock": false,
-        "weatherLocation": "27.9004,78.0723"
-    },
-    "session": {
-        "vimKeybinds": true
-    },
-    "sidebar": {
-        "dragThreshold": 80,
-        "enabled": true
-    },
-    "utilities": {
-        "toasts": {
-            "configLoaded": false
-        }
+  "appearance": {
+    "transparency": {
+      "base": 0.85,
+      "enabled": true,
+      "layers": 0.4
     }
+  },
+  "background": {
+    "desktopClock": {
+      "enabled": true,
+      "position": "top-right",
+      "scale": 0.75
+    },
+    "visualiser": {
+      "autoHide": true,
+      "blur": false,
+      "enabled": true,
+      "rounding": 2,
+      "spacing": 1
+    },
+    "wallpaperEnabled": true
+  },
+  "bar": {
+    "clock": {
+      "background": false,
+      "showDate": true,
+      "showIcon": true
+    },
+    "persistent": false,
+    "scrollActions": {
+      "brightness": true,
+      "volume": true,
+      "workspaces": true
+    },
+    "showOnHover": true,
+    "workspaces": {
+      "specialWorkspaceIcons": [
+        {
+          "icon": "lock",
+          "name": "secret"
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "enabled": true,
+    "showOnHover": false,
+    "showWeather": true
+  },
+  "general": {
+    "apps": {
+      "terminal": [
+        "foot"
+      ]
+    }
+  },
+  "launcher": {
+    "enableDangerousActions": true,
+    "hiddenApps": [
+      "an-anime-game-launcher",
+      "brave-browser",
+      "firefox"
+    ],
+    "showOnHover": false,
+    "useFuzzy": {
+      "actions": true,
+      "apps": true,
+      "schemes": true,
+      "variants": true,
+      "wallpapers": true
+    },
+    "vimKeybinds": true
+  },
+  "lock": {
+    "hideNotifs": true
+  },
+  "services": {
+    "maxVolume": 1,
+    "useFahrenheit": false,
+    "useTwelveHourClock": false,
+    "weatherLocation": "27.9004,78.0723"
+  },
+  "session": {
+    "vimKeybinds": true
+  },
+  "sidebar": {
+    "dragThreshold": 80,
+    "enabled": true
+  },
+  "utilities": {
+    "toasts": {
+      "configLoaded": false
+    }
+  }
 }
