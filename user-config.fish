@@ -9,9 +9,9 @@ function y
     command rm -f -- "$tmp"
 end
 
-function del
-    sudo pacman -Rns $argv
-end
+# function del
+#     sudo pacman -Rns $argv
+# end
 
 # function upd
 #     sudo pacman -Syu
@@ -28,3 +28,4 @@ abbr c clear
 abbr n nvchad
 abbr upd "sudo pacman -Syu"
 abbr i "sudo pacman -S"
+abbr del "sudo pacman -Rns"
