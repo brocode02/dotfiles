@@ -125,4 +125,9 @@ hl.config({
 	render = {
 		expand_undersized_textures = false,
 	},
+	decoration = {
+		blur = {
+			noise = 0.3,
+		},
+	},
 })
