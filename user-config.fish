@@ -13,9 +13,9 @@ function del
     sudo pacman -Rns $argv
 end
 
-function upd
-    sudo pacman -Syu
-end
+# function upd
+#     sudo pacman -Syu
+# end
 
 function i
     sudo pacman -S $argv
@@ -26,3 +26,4 @@ end
 
 abbr c clear
 abbr n nvchad
+abbr upd "sudo pacman -Syu"
