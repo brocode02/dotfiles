@@ -128,6 +128,7 @@ hl.config({
 	decoration = {
 		blur = {
 			-- noise = 0.3,
+			contrast = 2,
 		},
 	},
 })
