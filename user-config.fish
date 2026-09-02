@@ -25,3 +25,4 @@ function nvchad
 end
 
 abbr c clear
+abbr n nvchad
