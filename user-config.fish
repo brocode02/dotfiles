@@ -17,9 +17,9 @@ end
 #     sudo pacman -Syu
 # end
 
-function i
-    sudo pacman -S $argv
-end
+# function i
+#     sudo pacman -S $argv
+# end
 function nvchad
     env NVIM_APPNAME=nvchad nvim $argv
 end
@@ -27,3 +27,4 @@ end
 abbr c clear
 abbr n nvchad
 abbr upd "sudo pacman -Syu"
+abbr i "sudo pacman -S"
