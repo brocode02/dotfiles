@@ -30,6 +30,15 @@ hl.bind(
 	hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"),
 	{ description = "Secret: unlock workspace" }
 )
+local function create_bind(keybinds, action, flags)
+	local get_flags = type(flags) == "function" and flags or function()
+		return flags
+	end
+
+	for _, key in ipairs(flatten_keybinds(keybinds)) do
+		hl.bind(key, action, get_flags(key))
+	end
+end
 for _, dir in ipairs({ "left", "right", "up", "down" }) do
 	create_bind("SUPER + " .. dir, hl.dsp.focus({ direction = dir }))
 	create_bind("SUPER + SHIFT + " .. dir, hl.dsp.window.move({ direction = dir }))
