@@ -30,6 +30,10 @@ hl.bind(
 	hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"),
 	{ description = "Secret: unlock workspace" }
 )
+for _, dir in ipairs({ "left", "right", "up", "down" }) do
+	create_bind("SUPER + " .. dir, hl.dsp.focus({ direction = dir }))
+	create_bind("SUPER + SHIFT + " .. dir, hl.dsp.window.move({ direction = dir }))
+end
 -- hl.window_rule({ match = { class = "brave-browser" }, no_blur = true })
 local function guard_secret_apps(win)
 	if win.class == "brave-browser" then
