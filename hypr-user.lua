@@ -145,3 +145,7 @@ hl.config({
 		},
 	},
 })
+hl.bind("SUPER + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
+hl.bind("SUPER + SHIFT + L", hl.dsp.window.move({ direction = "left" }))
+hl.bind("SUPER + SHIFT + J", hl.dsp.window.move({ direction = "left" }))
+hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({ direction = "left" }))
