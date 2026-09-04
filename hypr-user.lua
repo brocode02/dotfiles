@@ -9,6 +9,7 @@ hl.bind("SUPER + Y", hl.dsp.exec_cmd("kitty -1 yazi"), { description = "open yaz
 -- hl.unbind("SUPER + B")
 -- hl.bind("SUPER+B", hl.dsp.exec_cmd("kitty -1 btop"))
 -- hl.bind("SUPER + SHIFT + XF86Assistant", hl.dsp.exec_cmd("kitty -1 opencode"))
+hl.bind("Alt + F4", hl.dsp.exec_cmd("caelestia shell drawers toggle session"), { description = "Window: Close" })
 hl.unbind("SUPER + D")
 hl.bind(
 	"SUPER + D",
