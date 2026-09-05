@@ -43,7 +43,10 @@
       ],
       "showWindows": false,
       "showWindowsOnSpecialWorkspaces": false
-    }
+    }"displayType": "shapes",
+    "label": "  ",
+    "occupiedLabel": "󰮯",
+    "activeLabel": "󰮯",
   },
   "dashboard": {
     "enabled": true,
