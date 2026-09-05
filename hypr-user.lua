@@ -48,6 +48,8 @@ hl.bind(
 -- 	create_bind("SUPER + SHIFT + " .. dir, hl.dsp.window.move({ direction = dir }))
 -- end
 -- hl.window_rule({ match = { class = "brave-browser" }, no_blur = true })
+----------------------------------------------------------
+-----------------------------------------------------------
 local function guard_secret_apps(win)
 	if win.class == "brave-browser" then
 		local ws = win.workspace
