@@ -73,7 +73,8 @@
     "vimKeybinds": true
   },
   "lock": {
-    "hideNotifs": true
+    "hideNotifs": true,
+    "useWallpaper": true
   },
   "services": {
     "maxVolume": 1,
