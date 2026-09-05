@@ -45,7 +45,8 @@
       "showWindowsOnSpecialWorkspaces": false
     },
     "activeWindow": {
-      "showOnHover": false
+      "showOnHover": false,
+      "comapct": true
     }
   },
   "dashboard": {
