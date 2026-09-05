@@ -32,6 +32,8 @@ hl.bind(
 	hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"),
 	{ description = "Secret: unlock workspace" }
 )
+------------------------------------------------------
+-------------------------------------------------------
 -- local function create_bind(keybinds, action, flags)
 -- 	local get_flags = type(flags) == "function" and flags or function()
 -- 		return flags
