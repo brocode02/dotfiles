@@ -41,7 +41,8 @@
           "name": "secret"
         }
       ],
-      "showWindows": false
+      "showWindows": false,
+      "showWindowsOnSpecialWorkspaces": false
     }
   },
   "dashboard": {
