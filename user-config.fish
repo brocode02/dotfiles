@@ -1,5 +1,5 @@
-# function fish_greeting
-# end
+function fish_greeting
+end
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
     command yazi $argv --cwd-file="$tmp"
