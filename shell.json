@@ -35,6 +35,7 @@
     },
     "showOnHover": true,
     "workspaces": {
+      "shown": 10,
       "specialWorkspaceIcons": [
         {
           "icon": "lock",
