@@ -42,7 +42,8 @@
         }
       ],
       "showWindows": false,
-      "showWindowsOnSpecialWorkspaces": false
+      "showWindowsOnSpecialWorkspaces": false,
+      "displaytype": "default"
     },
     "activeWindow": {
       "showOnHover": false,
