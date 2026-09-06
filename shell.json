@@ -43,7 +43,7 @@
       ],
       "showWindows": false,
       "showWindowsOnSpecialWorkspaces": false,
-      "displaytype": "shapes"
+      "displayType": "default"
     },
     "activeWindow": {
       "showOnHover": false,
