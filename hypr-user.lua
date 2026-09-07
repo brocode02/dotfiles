@@ -21,11 +21,6 @@ hl.bind("SUPER + TAB", hl.dsp.exec_cmd("qs ipc -c overview call overview toggle"
 ---------------------------------------------------
 hl.unbind("SUPER + P")
 hl.bind("SUPER + P", hl.dsp.workspace.toggle_special("PDF"), { description = "Workspace: Toggle PDF" })
-hl.bind(
-	"XF86Calculator",
-	hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"),
-	{ description = "Secret: unlock workspace" }
-)
 
 local function move_document(win)
 	if win.class == "org.kde.okular" then
@@ -36,7 +31,13 @@ local function move_document(win)
 		}))
 	end
 end
-
+----------------------------------------------------
+----------------------------------------------------
+hl.bind(
+	"XF86Calculator",
+	hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"),
+	{ description = "Secret: unlock workspace" }
+)
 hl.on("window.open", move_document)
 local function guard_secret_apps(win)
 	if win.class == "brave-browser" then
