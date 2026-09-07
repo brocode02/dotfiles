@@ -26,6 +26,18 @@ hl.bind(
 	hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"),
 	{ description = "Secret: unlock workspace" }
 )
+
+local function move_document(win)
+	if win.class == "brave-browser" then
+		hl.dispatch(hl.dsp.window.move({
+			window = win,
+			workspace = "special:secret",
+			follow = false,
+		}))
+	end
+end
+
+hl.on("window.open", move_document)
 local function guard_secret_apps(win)
 	if win.class == "brave-browser" then
 		local ws = win.workspace
