@@ -28,7 +28,7 @@ hl.bind("SUPER + TAB", hl.dsp.exec_cmd("qs ipc -c overview call overview toggle"
 ---------------------------------------------------
 hl.unbind("SUPER + P")
 hl.bind(
-	"SUPER + P",
+	"XF86Calculator",
 	hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"),
 	{ description = "Secret: unlock workspace" }
 )
