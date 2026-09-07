@@ -10,4 +10,6 @@ return {
 	windowGapsIn = 2,
 	windowGapsOut = 10,
 	singleWindowGapsOut = 20,
+	kbWindowCycleNext = "",
+	kbWindowGroupCycleNext = "ALT + TAB",
 }
