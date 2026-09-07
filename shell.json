@@ -40,6 +40,10 @@
         {
           "icon": "lock",
           "name": "secret"
+        },
+        {
+          "icon": "lock",
+          "name": "PDF"
         }
       ],
       "showWindows": false,
