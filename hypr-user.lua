@@ -3,13 +3,6 @@
 hl.bind("SUPER + J", hl.dsp.exec_cmd("caelestia shell drawers toggle bar"), { description = "Shell: Toggle bar" })
 hl.bind("SUPER + Y", hl.dsp.exec_cmd("kitty -1 yazi"), { description = "open yazi file manager" })
 hl.bind("SUPER + I", hl.dsp.exec_cmd("caelestia shell nexus open"), { description = "open setting" })
--- hl.unbind("SUPER + X")
--- hl.unbind("SUPER + Z")
--- hl.bind("SUPER + Z", hl.dsp.exec_cmd("/usr/bin/zen-browser"), { description = "open zen broswer" })
--- hl.bind("SUPER + X", hl.dsp.exec_cmd("kitty -1 nvchad"), { description = "open lazyvim" })
--- hl.unbind("SUPER + B")
--- hl.bind("SUPER+B", hl.dsp.exec_cmd("kitty -1 btop"))
--- hl.bind("SUPER + SHIFT + XF86Assistant", hl.dsp.exec_cmd("kitty -1 opencode"))
 hl.bind("ALT + F4", hl.dsp.exec_cmd("caelestia shell drawers toggle session"), { description = "Window: Close" })
 hl.unbind("SUPER + D")
 hl.bind(
@@ -32,24 +25,6 @@ hl.bind(
 	hl.dsp.exec_cmd("/home/aman/.config/caelestia/secret.sh"),
 	{ description = "Secret: unlock workspace" }
 )
-------------------------------------------------------
--------------------------------------------------------
--- local function create_bind(keybinds, action, flags)
--- 	local get_flags = type(flags) == "function" and flags or function()
--- 		return flags
--- 	end
---
--- 	for _, key in ipairs(flatten_keybinds(keybinds)) do
--- 		hl.bind(key, action, get_flags(key))
--- 	end
--- end
--- for _, dir in ipairs({ "left", "right", "up", "down" }) do
--- 	create_bind("SUPER + " .. dir, hl.dsp.focus({ direction = dir }))
--- 	create_bind("SUPER + SHIFT + " .. dir, hl.dsp.window.move({ direction = dir }))
--- end
--- hl.window_rule({ match = { class = "brave-browser" }, no_blur = true })
-----------------------------------------------------------
------------------------------------------------------------
 local function guard_secret_apps(win)
 	if win.class == "brave-browser" then
 		local ws = win.workspace
