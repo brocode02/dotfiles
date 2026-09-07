@@ -28,10 +28,10 @@ hl.bind(
 )
 
 local function move_document(win)
-	if win.class == "brave-browser" then
+	if win.class == "org.kde.okular" then
 		hl.dispatch(hl.dsp.window.move({
 			window = win,
-			workspace = "special:secret",
+			workspace = "special:PDF",
 			follow = false,
 		}))
 	end
