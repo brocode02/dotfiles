@@ -12,4 +12,5 @@ return {
 	singleWindowGapsOut = 20,
 	kbWindowCycleNext = "",
 	kbWindowGroupCycleNext = "ALT + TAB",
+	windowBorderSize = 5,
 }
