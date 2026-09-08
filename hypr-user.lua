@@ -4,6 +4,7 @@ hl.bind("SUPER + J", hl.dsp.exec_cmd("caelestia shell drawers toggle bar"), { de
 hl.bind("SUPER + Y", hl.dsp.exec_cmd("kitty -1 yazi"), { description = "open yazi file manager" })
 hl.bind("SUPER + I", hl.dsp.exec_cmd("caelestia shell nexus open"), { description = "open setting" })
 hl.bind("ALT + F4", hl.dsp.exec_cmd("poweroff"), { description = "Window: Close" })
+hl.bind("ALT + R", hl.dsp.exec_cmd("reboot"), { description = "Window: Reboot" })
 hl.unbind("SUPER + D")
 hl.bind(
 	"SUPER + D",
