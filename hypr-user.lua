@@ -21,7 +21,7 @@ hl.bind("SUPER + TAB", hl.dsp.exec_cmd("qs ipc -c overview call overview toggle"
 ---------------------------------------------------
 ---------------------------------------------------
 hl.unbind("SUPER + P")
-hl.bind("XF86launch2", hl.dsp.workspace.toggle_special("PDF"), { description = "PDF: Toggle PDF" })
+hl.bind("SUPER + P", hl.dsp.workspace.toggle_special("PDF"), { description = "PDF: Toggle PDF" })
 
 local function move_document(win)
 	if win.class == "org.kde.okular" then
