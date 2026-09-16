@@ -8,6 +8,9 @@ function y
     end
     command rm -f -- "$tmp"
 end
+if command -v z >/dev/null
+    alias cd=z
+end
 
 # function del
 #     sudo pacman -Rns $argv
