@@ -140,6 +140,10 @@ hl.config({
 			contrast = 2,
 		},
 	},
+	misc = {
+		disable_hyprland_logo = true,
+		disable_splash_rendering = true,
+	},
 })
 --move window
 hl.bind("SUPER + SHIFT + H", hl.dsp.window.move({ direction = "left" }))

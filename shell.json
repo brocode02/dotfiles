@@ -12,7 +12,7 @@
       "position": "top-right",
       "scale": 0.75
     },
-    "wallpaperEnabled": true
+    "wallpaperEnabled": false
   },
   "bar": {
     "clock": {
