@@ -12,13 +12,6 @@
       "position": "top-right",
       "scale": 0.75
     },
-    "visualiser": {
-      "autoHide": true,
-      "blur": false,
-      "enabled": true,
-      "rounding": 2,
-      "spacing": 1
-    },
     "wallpaperEnabled": true
   },
   "bar": {
