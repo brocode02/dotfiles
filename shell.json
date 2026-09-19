@@ -38,12 +38,16 @@
             "shown": 5,
             "specialWorkspaceIcons": [
                 {
+                    "flags": "",
                     "icon": "lock",
-                    "name": "secret"
+                    "name": "secret",
+                    "regex": ""
                 },
                 {
+                    "flags": "",
                     "icon": "lock",
-                    "name": "Documents"
+                    "name": "Documents",
+                    "regex": ""
                 }
             ]
         }
@@ -82,10 +86,13 @@
         "useWallpaper": true
     },
     "services": {
+        "clockFormat": "TwentyFourHour",
+        "dataUnits": "Decimal",
         "maxVolume": 1,
         "useFahrenheit": false,
         "useTwelveHourClock": false,
-        "weatherLocation": "27.9004,78.0723"
+        "weatherLocation": "27.9004,78.0723",
+        "weatherUnits": "Celsius"
     },
     "session": {
         "vimKeybinds": true
