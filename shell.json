@@ -33,6 +33,9 @@
         "showOnHover": true,
         "workspaces": {
             "displayType": "Text",
+            "occupiedBg": true,
+            "perMonitor": false,
+            "showUnoccupied": false,
             "showWindows": false,
             "showWindowsOnSpecialWorkspaces": false,
             "shown": 5,
