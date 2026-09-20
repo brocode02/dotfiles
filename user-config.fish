@@ -12,17 +12,6 @@ if command -v z >/dev/null
     alias cd=z
 end
 
-# function del
-#     sudo pacman -Rns $argv
-# end
-
-# function upd
-#     sudo pacman -Syu
-# end
-
-# function i
-#     sudo pacman -S $argv
-# end
 function nvchad
     env NVIM_APPNAME=nvchad nvim $argv
 end
