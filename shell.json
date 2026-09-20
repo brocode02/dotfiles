@@ -35,7 +35,7 @@
             "displayType": "Text",
             "occupiedBg": true,
             "perMonitor": false,
-            "showUnoccupied": false,
+            "showUnoccupied": true,
             "showWindows": false,
             "showWindowsOnSpecialWorkspaces": false,
             "shown": 5,
