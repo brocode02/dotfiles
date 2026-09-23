@@ -20,7 +20,8 @@ abbr c clear
 abbr n nvchad
 abbr upd "sudo pacman -Syu"
 abbr i "sudo pacman -S"
-afunction cc
+abbr del "sudo pacman -Rns"
+function cc
     tee /dev/tty | wl-copy
 end
-funcsave ccbbr del "sudo pacman -Rns"
+funcsave cc
