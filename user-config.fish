@@ -16,7 +16,7 @@ function nvchad
     env NVIM_APPNAME=nvchad nvim $argv
 end
 
-# abbr c clear
+abbr c clear
 abbr n nvchad
 abbr upd "sudo pacman -Syu"
 abbr i "sudo pacman -S"
