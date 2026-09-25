@@ -15,6 +15,10 @@ end
 function nvchad
     env NVIM_APPNAME=nvchad nvim $argv
 end
+function sudo-nvchad
+    set -lx SUDO_EDITOR "env NVIM_APPNAME=nvchad nvim"
+    sudoedit $argv
+end
 
 abbr c clear
 abbr n nvchad
