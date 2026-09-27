@@ -28,3 +28,4 @@ abbr del "sudo pacman -Rns"
 function yy
     tee /dev/tty | wl-copy
 end
+abbr au "systemctl --user restart pipewire pipewire-pulse wireplumber"
