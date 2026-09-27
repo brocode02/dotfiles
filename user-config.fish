@@ -24,7 +24,7 @@ abbr c clear
 abbr n nvchad
 abbr upd "sudo pacman -Syu"
 abbr i "sudo pacman -S"
-abbr u "paru -S"
+abbr au "paru -S"
 abbr del "sudo pacman -Rns"
 function yy
     tee /dev/tty | wl-copy
