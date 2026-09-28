@@ -20,6 +20,8 @@ hl.bind(
 hl.bind("SUPER + TAB", hl.dsp.exec_cmd("qs ipc -c overview call overview toggle"))
 
 hl.on("hyprland.start", function()
+	hl.exec_cmd("kdeconnectd")
+end)
 ---------------------------------------------------
 ---------------------------------------------------
 hl.unbind("SUPER + P")
